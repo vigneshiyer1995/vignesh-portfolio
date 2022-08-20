@@ -42,9 +42,9 @@ export default function Home() {
               <div className={home.ban_cta}>
                 <div className={home.ban_social}>
                   <ul>
-                    <li><a href="https://www.facebook.com/artist.VigneshVenkatraman" target="_blank"><i className="feather icon-feather-facebook"></i></a></li>
-                    <li><a href="https://www.instagram.com/viggy_i/" target="_blank"><i className="feather icon-feather-instagram"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/vignesh-iyer-41249279/" target="_blank"><i className="feather icon-feather-linkedin"></i></a></li>
+                    <li><a href="https://www.facebook.com/artist.VigneshVenkatraman" ><i className="feather icon-feather-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/viggy_i/" ><i className="feather icon-feather-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/vignesh-iyer-41249279/" ><i className="feather icon-feather-linkedin"></i></a></li>
                   </ul>
                 </div>
                 <div className={home.shortwork}>
@@ -122,7 +122,7 @@ Concepts & Requirement in Depth. Enjoyed & Willing to Enjoy more Challenges.</p>
               </div>
             </div>
             <div className="col-lg-4 col-md-5 text-center m-30-tb">
-            <a href="https://fiveonlineclient.in/sejalglasses/" target="_blank" className="work-link">
+            <a href="https://fiveonlineclient.in/sejalglasses/"  className="work-link">
               <div className={home.work_image}>
                 
                     <Image 
@@ -136,7 +136,7 @@ Concepts & Requirement in Depth. Enjoyed & Willing to Enjoy more Challenges.</p>
               </a>
             </div>
             <div className="col-lg-4 col-md-5 text-center m-30-tb">
-            <a href="https://sunstellar.in/" target="_blank" className="work-link">
+            <a href="https://sunstellar.in/"  className="work-link">
             <div className={home.work_image}>
                   
                     <Image 
@@ -150,7 +150,7 @@ Concepts & Requirement in Depth. Enjoyed & Willing to Enjoy more Challenges.</p>
               </a>
             </div>
             <div className="col-lg-4 col-md-5 text-center m-30-tb">
-            <a href="https://fiveonlineclient.in/arihant" target="_blank" className="work-link">
+            <a href="https://fiveonlineclient.in/arihant"  className="work-link">
             <div className={home.work_image}>
                   
                     <Image 
@@ -164,7 +164,7 @@ Concepts & Requirement in Depth. Enjoyed & Willing to Enjoy more Challenges.</p>
               </a>
             </div>
             <div className="col-lg-4 col-md-5 text-center m-30-tb">
-            <a href="https://eb5an.in/" target="_blank" className="work-link">
+            <a href="https://eb5an.in/"  className="work-link">
             <div className={home.work_image}>
                   
                     <Image 
@@ -178,7 +178,7 @@ Concepts & Requirement in Depth. Enjoyed & Willing to Enjoy more Challenges.</p>
               </a>
             </div>
             <div className="col-lg-4 col-md-5 text-center m-30-tb">
-            <a href="http://mit-worldwide.com/" target="_blank" className="work-link">
+            <a href="http://mit-worldwide.com/"  className="work-link">
             <div className={home.work_image}>
                   
                     <Image 
