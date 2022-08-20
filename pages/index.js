@@ -75,8 +75,8 @@ export default function Home() {
               </div>
               <div className="col-lg-7 col-md-6">
                     <p>I am Professional Web Designer & Developer, who has 5 years of Experience, had 
-an Exciting Journey till now, Worked with Several Organizations & Understand the 
-Concepts & Requirement in Depth within given Deadline. </p>
+an Exciting Journey till now, Worked with Several Organizations & have Ability to Understand the 
+Concepts & Requirement in Depth & Deliver Qualitative Output with given Deadline</p>
 
 <p>My Ultimate Goal is to provide a best Services & seek to learn more from it </p>
               </div>
