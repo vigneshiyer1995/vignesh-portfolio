@@ -8,7 +8,7 @@ import Work3 from '../images/work3.png'
 import Work4 from '../images/work4.png'
 import Work5 from '../images/work5.png'
 import Skill from '../images/skill.png'
-
+import Link from 'next/link'
 import Footer from '../components/Footer.js'
 
 export default function Home() {
@@ -42,18 +42,18 @@ export default function Home() {
               <div className={home.ban_cta}>
                 <div className={home.ban_social}>
                   <ul>
-                    <li><a href="https://www.facebook.com/artist.VigneshVenkatraman" ><i className="feather icon-feather-facebook"></i></a></li>
-                    <li><a href="https://www.instagram.com/viggy_i/" ><i className="feather icon-feather-instagram"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/vignesh-iyer-41249279/" ><i className="feather icon-feather-linkedin"></i></a></li>
+                    <li><Link href="https://www.facebook.com/artist.VigneshVenkatraman" className={home.ban_social_link} ><i className="feather icon-feather-facebook"></i></Link></li>
+                    <li><Link href="https://www.instagram.com/viggy_i/" className={home.ban_social_link} ><i className="feather icon-feather-instagram"></i></Link></li>
+                    <li><Link href="https://www.linkedin.com/in/vignesh-iyer-41249279/" className={home.ban_social_link} ><i className="feather icon-feather-linkedin"></i></Link></li>
                   </ul>
                 </div>
                 <div className={home.shortwork}>
-                  <a href="#work">
+                  <Link href="#work" className={home.banbtn_btn}>
                     <div className={home.banbtn}>
                       <i className="feather icon-feather-arrow-down"></i>
                       <span>WORK</span>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
            
@@ -122,21 +122,24 @@ Concepts & Requirement in Depth. Enjoyed & Willing to Enjoy more Challenges.</p>
               </div>
             </div>
             <div className="col-lg-4 col-md-5 text-center m-30-tb">
-            <a href="https://fiveonlineclient.in/sejalglasses/"  className="work-link">
-              <div className={home.work_image}>
+            <div className={home.work_sec}>
+            <div className={home.work_image}>
                 
-                    <Image 
-                      src={Work1}
-                      alt="Work"
-                      className={home.work_img}
-                    />
-                  
-              </div>
-              <h6 className='text-center'>Sejal Glass</h6>
-              </a>
+                <Image 
+                  src={Work1}
+                  alt="Work"
+                  className={home.work_img}
+                />
+              
+          </div>
+          <Link href="https://fiveonlineclient.in/sejalglasses/"  className={home.work_link}>
+          <h6 className='text-center'>Sejal Glass</h6>
+          </Link>
+            </div>
+              
             </div>
             <div className="col-lg-4 col-md-5 text-center m-30-tb">
-            <a href="https://sunstellar.in/"  className="work-link">
+            <div className={home.work_sec}>
             <div className={home.work_image}>
                   
                     <Image 
@@ -146,11 +149,13 @@ Concepts & Requirement in Depth. Enjoyed & Willing to Enjoy more Challenges.</p>
                     />
                  
               </div>
+              <Link href="https://sunstellar.in/"  className={home.work_link}>
               <h6 className='text-center'>Sunstellar</h6>
-              </a>
+              </Link>
+              </div>
             </div>
             <div className="col-lg-4 col-md-5 text-center m-30-tb">
-            <a href="https://fiveonlineclient.in/arihant"  className="work-link">
+            <div className={home.work_sec}>
             <div className={home.work_image}>
                   
                     <Image 
@@ -160,11 +165,13 @@ Concepts & Requirement in Depth. Enjoyed & Willing to Enjoy more Challenges.</p>
                     />
                   
               </div>
+              <Link href="https://fiveonlineclient.in/arihant"  className={home.work_link}>
               <h6 className='text-center'>Arihant Electricals</h6>
-              </a>
+              </Link>
+              </div>
             </div>
             <div className="col-lg-4 col-md-5 text-center m-30-tb">
-            <a href="https://eb5an.in/"  className="work-link">
+            <div className={home.work_sec}>
             <div className={home.work_image}>
                   
                     <Image 
@@ -174,11 +181,13 @@ Concepts & Requirement in Depth. Enjoyed & Willing to Enjoy more Challenges.</p>
                     />
                   
               </div>
+              <Link href="https://eb5an.in/"  className={home.work_link}>
               <h6 className='text-center'>EBAN</h6>
-              </a>
+              </Link>
+              </div>
             </div>
             <div className="col-lg-4 col-md-5 text-center m-30-tb">
-            <a href="http://mit-worldwide.com/"  className="work-link">
+            <div className={home.work_sec}>
             <div className={home.work_image}>
                   
                     <Image 
@@ -188,8 +197,10 @@ Concepts & Requirement in Depth. Enjoyed & Willing to Enjoy more Challenges.</p>
                     />
                   
               </div>
+              <Link href="http://mit-worldwide.com/"  className={home.work_link}>
               <h6 className='text-center'>MIT Worldwide</h6>
-              </a>
+              </Link>
+              </div>
             </div>
             
           </div>
@@ -242,11 +253,11 @@ Concepts & Requirement in Depth. Enjoyed & Willing to Enjoy more Challenges.</p>
 
             <div className={home.contact}>
                 <i className='feather icon-feather-phone'></i>
-                <a href="tel: +918356068719">+91-8356068719</a>
+                <Link href="tel: +918356068719">+91-8356068719</Link>
             </div>
             <div className={home.contact}>
                 <i className='feather icon-feather-mail'></i>
-                <a href="mailto: vigeshiyer212@gmail.com">vigeshiyer212@gmail.com</a>
+                <Link href="mailto: vigeshiyer212@gmail.com">vigeshiyer212@gmail.com</Link>
             </div>
         </div>
         </div>

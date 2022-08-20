@@ -1,4 +1,6 @@
 import React from 'react'
+import Link from 'next/link'
+
 
 const Footer = () => {
   return (
@@ -8,7 +10,7 @@ const Footer = () => {
         <div className="row">
             <div className="col-lg-12">
             <div className="copyright text-center">
-            <p>© Copyright 2022, All Right Reserved <a href="" className='text-orange'>Vignesh Iyer</a></p>
+            <p>© Copyright 2022, All Right Reserved <Link href="/" ><span className='text-orange'>Vignesh Iyer</span></Link></p>
         </div>
             </div>
         </div>
