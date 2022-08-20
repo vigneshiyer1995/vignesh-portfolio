@@ -76,9 +76,9 @@ export default function Home() {
               <div className="col-lg-7 col-md-6">
                     <p>I am Professional Web Designer & Developer, who has 5 years of Experience, had 
 an Exciting Journey till now, Worked with Several Organizations & Understand the 
-Concepts & Requirement in Depth. Enjoyed & Willing to Enjoy more Challenges.</p>
+Concepts & Requirement in Depth within given Deadline. </p>
 
-<p>My Ultimate Goal to provide a best Services & seek to learn more from it </p>
+<p>My Ultimate Goal is to provide a best Services & seek to learn more from it </p>
               </div>
             </div>
           </div>
@@ -95,14 +95,14 @@ Concepts & Requirement in Depth. Enjoyed & Willing to Enjoy more Challenges.</p>
                     <p className={home.desig}>as UI/ UX Designer</p>
                   </div>
                   <div className={home.exp}>
-                    <p><span className={home.exp_dur}>2020-2022 </span>Worked at</p>
-                    <p className={home.company}>FIVE ONLINE WEB SOLUTIONS</p>
-                    <p className={home.desig}>as UI/ UX Designer</p>
+                    <p><span className={home.exp_dur}>2019-2020 </span>Worked at</p>
+                    <p className={home.company}>FREELANCER</p>
+                    <p className={home.desig}>as Web & Graphic Designer</p>
                   </div>
                   <div className={home.exp}>
-                    <p><span className={home.exp_dur}>2020-2022 </span>Worked at</p>
-                    <p className={home.company}>FIVE ONLINE WEB SOLUTIONS</p>
-                    <p className={home.desig}>as UI/ UX Designer</p>
+                    <p><span className={home.exp_dur}>2016-2019 </span>Worked at</p>
+                    <p className={home.company}>MAVERICK TECHSOFT PVT LTD</p>
+                    <p className={home.desig}>as Web & Graphic Designer</p>
                   </div>
                 </div>
               </div>

@@ -28,6 +28,7 @@ const Header = () => {
                         
                     </div>
                     <div className="col-lg-10">
+                        
                         <ul className="v-navbar mobo-hide">
                             <li><Link href='/' ><i className='feather icon-feather-home'></i></Link></li>
                             <li><Link href="/#about">About</Link></li>

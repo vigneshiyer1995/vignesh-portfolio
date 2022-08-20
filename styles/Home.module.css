@@ -209,7 +209,7 @@
 
 .skill_title h3{
   font-size: 6rem;
-  color: var(--altcolor);
+  color: var(--maincolor);
   font-weight: 700;
 
 }
@@ -253,8 +253,9 @@
   }
 
   .mainbanner{
-    padding: 50px 20px;
+    padding: 50px 10px;
     display: block;
+    height: 100%;
   }
 
   .mainbanner h2:nth-child(1){
@@ -280,7 +281,7 @@
 
   .exp_title, .work_title h3, .skill_title h3{
     font-size: 3rem;
-    color: var(--altcolor);
+   
   }
 
   .contact i{
