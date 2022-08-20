@@ -1,129 +1,301 @@
-.container {
-  padding: 0 2rem;
+
+
+.circle_g_bg{
+  background-color: #F5F5F5;
+  min-width: 781px;
+  height: 781px;
+  position: absolute;
+  top: -20%;
+  right: 0%;
+  border-radius: 50% 0% 50% 50%;
+  z-index: -10;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+.circle_y_bg{
+  background-color: #ffdb3c;
+  min-width: 481px;
+  height: 481px;
+  position: absolute;
+  top:30%;
+  left: -16%;
+  border-radius: 50% 50% 50% 0%;
+  z-index: -10;
+}
+
+
+
+.mainbanner{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 100px ;
+  margin-top: 70px;
+}
+
+.mainbanner h2:nth-child(1){
+  color: var(--altcolor);
+  text-align: left;
+  font-size: 4rem;
+  font-weight: 800;
+  margin: 0;
+  line-height: 0.5;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.mainbanner h2:nth-child(2){
+  color: #000;
+  text-align: left;
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.mainbanner h1{
+  color: var(--maincolor);
+  text-align: left;
+  font-size: 10rem;
+  font-weight: 800;
+  margin: 0;
+  line-height: 0.8;
+}
+
+.mainbanner p{
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 7px;
+  margin-top: 10px;
+}
+
+
+
+.ban_social ul{
+  list-style: none;
+  padding: 0;
+}
+
+.ban_social ul li{
+  margin-bottom: 30px ;
+}
+
+.ban_social ul li a{
+  font-size: 2rem;
+  color: #000;
+}
+
+.shortwork{
+  margin-top: 30px;
+}
+
+a .banbtn{
+  background-color: var(--altcolor);
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+
+a .banbtn i{
+    font-size: 2rem;
+    font-weight: 200;
+    transition: 0.5s ease;
+    animation: MoveUpDown 1s linear infinite;
+
+}
+
+a .banbtn:hover i {
+  margin-bottom: 10px;
+}
+
+.ban_cta{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+.about_title h3, .contact_title H3{
+  font-size: 5rem;
+  color: var(--altcolor);
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+.circle_about_g{
+  width: 400px;
+  height: 400px;
+  background-color: #F5F5F5;
+  position: absolute;
+  border-radius: 0 50% 50% 50%;
+  left: -5%;
+  z-index: -2;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
+.exp p{
   margin: 0;
-  line-height: 1.15;
+}
+
+.exp{
+  margin: 30px 0;
+}
+
+.exp .exp_dur{
+  color: #000;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.exp .company{
+  color: var(--maincolor);
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.exp .desig{
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
+.exp_title{
+  font-size: 8rem;
+    color: #f5f5f5;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.work_title h3{
+  font-size: 7rem;
+    text-transform: uppercase;
+    color: var(--altcolor);
+    font-weight: 600;
+}
+
+
+
+.work_img{
+  transition: 0.8s ease-in;
+}
+
+.work_img:hover{
+  transform: scale(1.1);
+ 
+}
+
+.skill_title h3{
+  font-size: 6rem;
+  color: #f5f5f5;
+  font-weight: 700;
+
+}
+
+.circle_skill_y{
+  background-color: #ffdb3c;
+  min-width: 481px;
+  height: 481px;
+  position: absolute;
+  top:10%;
+  left: 50%;
+  border-radius: 50% 50% 50% 50%;
+  z-index: -10;
+}
+
+
+
+.contact{
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.contact i{
+  color: var(--maincolor);
   font-size: 4rem;
+  margin-right: 20px;
 }
 
-.title,
-.description {
-  text-align: center;
+.contact a{
+  font-size: 3rem;
+  color:#000;
+  font-weight: 600;
 }
 
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+@media only screen and (max-width: 600px) {
+  .circle_g_bg{
+    min-width: 436px;
+    height: 436px;
   }
-}
 
-@media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
+  .mainbanner{
+    padding: 50px 20px;
+    display: block;
   }
-  .code {
-    background: #111;
+
+  .mainbanner h2:nth-child(1){
+    font-size: 1rem;
   }
-  .logo img {
-    filter: invert(1);
+
+  .mainbanner h2:nth-child(2){
+    font-size: 2rem;
   }
+
+  .mainbanner h1{
+    font-size: 4rem;
+  }
+
+  .mainbanner p{
+    font-size: 1rem;
+  }
+
+  .circle_skill_y{
+    min-width: 151px;
+    height: 151px;
+  }
+
+  .exp_title, .work_title h3, .skill_title h3{
+    font-size: 3rem;
+
+  }
+
+  .contact i{
+    font-size: 2rem;
+  }
+  .contact a{
+    font-size: 1rem;
+  }
+
+  .contact_title h3{
+    font-size: 3rem;
+  }
+
+  .circle_y_bg{
+    min-width: 281px;
+    height: 281px;
+  }
+
+
+    .about_title h3{
+      font-size: 3rem;
+    }
+  .ban_social ul{
+    display: flex;
+
+    align-items: center;
+  }
+
+  .ban_social ul li{
+    margin-right: 30px;
+  }
+
+  .circle_about_g{
+    width: 300px;
+    height: 300px;
+  }
+
+  
 }

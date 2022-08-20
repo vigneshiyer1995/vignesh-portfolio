@@ -1,26 +1,224 @@
-html,
-body {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');   
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 100px;
+  }
+}
+
+
+
+
+:root{
+  --mainfont: 'Montserrat', sans-serif;
+  --altcolor: #FFE455;
+  --maincolor: #ED761F;
+
+}
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+a{
+  text-decoration: none !important;
+  transition: 0.3s;
+}
+
+a:hover{
+  color: var(--maincolor);
+}
+
+.p-0{
+  padding:0 !important
+}
+
+.m-0{
+  margin: 0 !important;
+}
+
+section{
+  padding: 80px 0 !important;
+}
+
+.text-yellow{
+  color: var(--altcolor) !important;
+}
+
+.text-orange{
+  color: var(--maincolor) !important
+}
+
+.text-dark{
+  color: #000  !important;
+}
+
+
+
+#customcursor{
+  background-color: #232323;
+  border:1px solid black;    
+  height:20px;
+  width:20px;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  position: absolute;
+  z-index: 1;
+}
+
+body{
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: var(--mainfont) !important;
 }
 
-a {
-  color: inherit;
+.o-hide{
+  overflow: hidden !important;
+}
+
+
+.h-vh{
+  height: 100vh !important;
+}
+.header{
+  width: 100%;
+  padding: 30px  20px;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+.logo-container img{
+  width: 100%;
+  height: auto;
+  max-height: 40px;
+}
+
+.v-navbar{
+  list-style: none;
+  display: flex;
+  float: right;
+}
+
+.v-navbar li{
+  margin: 0 10px;
+}
+
+.v-navbar li a{
+  color: #232323;
   text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 14px;
+  padding: 10px 20px;
+  transition: 0.3s;
+  border-radius: 30px;
 }
 
-* {
-  box-sizing: border-box;
+.v-navbar li a:hover, .v-navbar li a:focus, .v-navbar li a.active{
+  background-color: #e08e12;
+  color: #fff;
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+  transform: scale(0.9);
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.v-navbar li a i{
+  font-size: 20px;
+  vertical-align: middle;
 }
+
+
+.work-link {
+  margin: 30px 0;
+}
+
+.work-link h6{
+  text-align: center !important;
+  color: #000;
+  font-weight: 700;
+  padding: 20px 0;
+}
+
+.m-30-tb{
+  margin: 30px 0 !important;
+}
+
+.coming-soon h2{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.des-hide{
+  display: none !important;
+}
+
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
